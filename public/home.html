@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>FriendFinder</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
+  	<meta charset="UTF-8">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <title>Friend Finder</title>
 </head>
 <body>
 
-	<div class="container">
-		<div class="jumbotron">
-			<h1 class=""><i class="far fa-grin-beam" aria-hidden="true"></i> Friend Finder</h1>
-			<hr>
-			<h2 class="">Answer a few basic questions. </h2>
-			<h2 class="">Then find the friend with the greatest compatibility!</h2>
-			<br>
+  <div class='container'>
+    <div class='card-panel yellow darken-1 col s12'>
+      <section class='center-align'>
+      <h1><i class="medium material-icons">person_pin</i> Friend Finder</h1>
+      <h4>Where your dream best friend will come true.</h4><br>
+      <a href='/survey' class="waves-effect waves-light btn cyan lighten-1"><i class="material-icons left">comment</i>Take Survey</a>
+      </section>
+    </div>
+    <div class='col s4'>
+      <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/StefanieDing/friend-finder' target= '_blank'>GitHub Repo</a></p>
+    </div>
+  </div>
 
-			<div class="">
-				<a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>	
-			</div>
-
-		</div>
-
-	    <footer class="footer">
-	      <div class="container">
-		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
-	      </div>
-	    </footer>
-
-	</div>
-
-	
 </body>
 </html>
