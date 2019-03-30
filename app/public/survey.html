@@ -137,12 +137,21 @@
           <div class="modal-content">
             <h4>Here's your new BFF!</h4>
             <h5 id="matchName"></h5>
-            <img id="matchPic" src="" alt="No Image" width = 250px>
+            <img id="matchPic" src="" alt="" width = 250px>
           </div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+          <a href="./home.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Retake Quiz</a>
         </div>
       </div>
+
+    <!-- <div id="modal3" class="modal">
+        <div class="modal-content">
+          <h4>Hope you found your match!</h4>
+        </div>
+      <div class="modal-footer">
+        <a href="./home.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Retake Quiz?</a>
+      </div>
+    </div> -->
 
     </div>
 
@@ -186,14 +195,14 @@ $(document).ready(function() {
             };
             //Grabs current URL of website
             var currentURL = window.location.origin;
-            //AJAX posts the data to friends API.
+            //AJAX posts 
             $.post(currentURL + "/api/friends", newFriend, function(data) {
                 //Grab the result from the AJAX post so that the best match's name and photo are displayed.
                 $("#matchName").text(data.name);
                 $("#matchPic").attr("src", data.profilePic);
             });
             // Show the modal with the best match
-                $('.modal').modal();
+                $('#modal1').modal();
             //clear form after submission
             $('#name').val("");
             $('#photo').val("");
@@ -207,10 +216,11 @@ $(document).ready(function() {
             $('#q8').val("");
             $('#q9').val("");
             $('#q10').val("");
+
         } else {
             alert("Please fill out ALL fields before submitting survey!")
+            // $('#modal2').modal();
         }
-        // return false;
     });
 });
 </script>
