@@ -11,6 +11,10 @@
   "scripts": {
     "start": "node server.js"
   },
+  "engines": {
+    "node": "10.12.0",
+    "npm": "6.4.1"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andrayayay/friend-finder.git"
