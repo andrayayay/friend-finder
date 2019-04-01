@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
-app.use('/static', express.static(path.join(__dirname, 'app')))
+app.use('/static', express.static(path.join(__dirname, './app')))
 
 //API and HTML Routes
 require('./app/routing/apiRoutes.js')(app); 
