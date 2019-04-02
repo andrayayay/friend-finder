@@ -1,4 +1,4 @@
-var friends = require('../data/friends');
+var friends = require('../data/friends.js');
 var path = require('path');
 
 var totalDifference = 0;
